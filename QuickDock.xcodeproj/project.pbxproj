@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BE3EB092226B60B600428FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3EB091226B60B600428FA5 /* AppDelegate.swift */; };
-		BE3EB094226B60B600428FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3EB093226B60B600428FA5 /* ViewController.swift */; };
 		BE3EB097226B60B600428FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3EB095226B60B600428FA5 /* Main.storyboard */; };
 		BE3EB099226B60B700428FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3EB098226B60B700428FA5 /* Assets.xcassets */; };
 		BE3EB09C226B60B700428FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3EB09A226B60B700428FA5 /* LaunchScreen.storyboard */; };
+		BEDD01A5226F287000BF6203 /* AddNewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */; };
+		BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */; };
+		BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */; };
+		BEDD01AD226F296000BF6203 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */; };
+		BEDD01AF226F2A0A00BF6203 /* AllImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AE226F2A0A00BF6203 /* AllImagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE3EB08E226B60B600428FA5 /* QuickDock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3EB091226B60B600428FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE3EB093226B60B600428FA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE3EB096226B60B600428FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE3EB098226B60B700428FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3EB09B226B60B700428FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3EB09D226B60B700428FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewImageViewController.swift; sourceTree = "<group>"; };
+		BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindTableViewController.swift; sourceTree = "<group>"; };
+		BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
+		BEDD01AE226F2A0A00BF6203 /* AllImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllImagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,90 @@
 		BE3EB090226B60B600428FA5 /* QuickDock */ = {
 			isa = PBXGroup;
 			children = (
-				BE3EB091226B60B600428FA5 /* AppDelegate.swift */,
-				BE3EB093226B60B600428FA5 /* ViewController.swift */,
-				BE3EB095226B60B600428FA5 /* Main.storyboard */,
+				BEDD019E226F260C00BF6203 /* Delegate */,
+				BEDD019B226F25D000BF6203 /* Model */,
+				BEDD019D226F25F500BF6203 /* StoryBoard */,
+				BEDD019C226F25E500BF6203 /* ViewController */,
 				BE3EB098226B60B700428FA5 /* Assets.xcassets */,
-				BE3EB09A226B60B700428FA5 /* LaunchScreen.storyboard */,
 				BE3EB09D226B60B700428FA5 /* Info.plist */,
 			);
 			path = QuickDock;
+			sourceTree = "<group>";
+		};
+		BEDD019B226F25D000BF6203 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEDD019C226F25E500BF6203 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD019F226F264E00BF6203 /* 速览 */,
+				BEDD01A0226F266A00BF6203 /* 全部 */,
+				BEDD01A3226F26A100BF6203 /* 添加 */,
+				BEDD01A1226F268500BF6203 /* 提醒 */,
+				BEDD01A2226F268F00BF6203 /* 搜索 */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BEDD019D226F25F500BF6203 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BE3EB095226B60B600428FA5 /* Main.storyboard */,
+				BE3EB09A226B60B700428FA5 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		BEDD019E226F260C00BF6203 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BE3EB091226B60B600428FA5 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		BEDD019F226F264E00BF6203 /* 速览 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */,
+			);
+			path = "速览";
+			sourceTree = "<group>";
+		};
+		BEDD01A0226F266A00BF6203 /* 全部 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01AE226F2A0A00BF6203 /* AllImagesViewController.swift */,
+			);
+			path = "全部";
+			sourceTree = "<group>";
+		};
+		BEDD01A1226F268500BF6203 /* 提醒 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */,
+			);
+			path = "提醒";
+			sourceTree = "<group>";
+		};
+		BEDD01A2226F268F00BF6203 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */,
+			);
+			path = "搜索";
+			sourceTree = "<group>";
+		};
+		BEDD01A3226F26A100BF6203 /* 添加 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */,
+			);
+			path = "添加";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3EB094226B60B600428FA5 /* ViewController.swift in Sources */,
+				BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */,
 				BE3EB092226B60B600428FA5 /* AppDelegate.swift in Sources */,
+				BEDD01AF226F2A0A00BF6203 /* AllImagesViewController.swift in Sources */,
+				BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */,
+				BEDD01A5226F287000BF6203 /* AddNewImageViewController.swift in Sources */,
+				BEDD01AD226F296000BF6203 /* QuickLookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
