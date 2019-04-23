@@ -16,6 +16,8 @@
 		BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */; };
 		BEDD01AD226F296000BF6203 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */; };
 		BEDD01AF226F2A0A00BF6203 /* AllImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AE226F2A0A00BF6203 /* AllImagesViewController.swift */; };
+		BEDD01B1226F34E000BF6203 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01B0226F34E000BF6203 /* Image.swift */; };
+		BEDD01B5226F3B7800BF6203 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindTableViewController.swift; sourceTree = "<group>"; };
 		BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
 		BEDD01AE226F2A0A00BF6203 /* AllImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllImagesViewController.swift; sourceTree = "<group>"; };
+		BEDD01B0226F34E000BF6203 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		BEDD019B226F25D000BF6203 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEDD01B0226F34E000BF6203 /* Image.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 				BEDD01A3226F26A100BF6203 /* 添加 */,
 				BEDD01A1226F268500BF6203 /* 提醒 */,
 				BEDD01A2226F268F00BF6203 /* 搜索 */,
+				BEDD01B3226F3B5E00BF6203 /* 设置 */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -146,6 +152,14 @@
 				BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */,
 			);
 			path = "添加";
+			sourceTree = "<group>";
+		};
+		BEDD01B3226F3B5E00BF6203 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */,
+			);
+			path = "设置";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDD01B5226F3B7800BF6203 /* SettingTableViewController.swift in Sources */,
+				BEDD01B1226F34E000BF6203 /* Image.swift in Sources */,
 				BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */,
 				BE3EB092226B60B600428FA5 /* AppDelegate.swift in Sources */,
 				BEDD01AF226F2A0A00BF6203 /* AllImagesViewController.swift in Sources */,
