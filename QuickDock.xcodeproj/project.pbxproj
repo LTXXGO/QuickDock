@@ -19,6 +19,7 @@
 		BEDD01B1226F34E000BF6203 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01B0226F34E000BF6203 /* Image.swift */; };
 		BEDD01B5226F3B7800BF6203 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */; };
 		BEDD01C922715EE400BF6203 /* ContactAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01C822715EE400BF6203 /* ContactAuthorViewController.swift */; };
+		BEDD01CC22719A6500BF6203 /* BeginnersGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01CB22719A6500BF6203 /* BeginnersGuideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		BEDD01B0226F34E000BF6203 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		BEDD01C822715EE400BF6203 /* ContactAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAuthorViewController.swift; sourceTree = "<group>"; };
+		BEDD01CB22719A6500BF6203 /* BeginnersGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnersGuideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */,
+				BEDD01CA22719A2D00BF6203 /* 新手引导 */,
 				BEDD01C722715EB100BF6203 /* 联系作者 */,
 			);
 			path = "设置";
@@ -171,6 +174,14 @@
 				BEDD01C822715EE400BF6203 /* ContactAuthorViewController.swift */,
 			);
 			path = "联系作者";
+			sourceTree = "<group>";
+		};
+		BEDD01CA22719A2D00BF6203 /* 新手引导 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD01CB22719A6500BF6203 /* BeginnersGuideViewController.swift */,
+			);
+			path = "新手引导";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				BEDD01B1226F34E000BF6203 /* Image.swift in Sources */,
 				BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */,
 				BE3EB092226B60B600428FA5 /* AppDelegate.swift in Sources */,
+				BEDD01CC22719A6500BF6203 /* BeginnersGuideViewController.swift in Sources */,
 				BEDD01AF226F2A0A00BF6203 /* AllImagesViewController.swift in Sources */,
 				BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */,
 				BEDD01A5226F287000BF6203 /* AddNewImageViewController.swift in Sources */,

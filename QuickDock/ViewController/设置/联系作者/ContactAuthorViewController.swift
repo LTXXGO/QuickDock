@@ -13,10 +13,9 @@ class ContactAuthorViewController: UIViewController, MFMailComposeViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    // MARK: - 邮件内容需要自定义
     @IBAction func sendEmailButtonTapped(_ sender: Any) {
         //判断用户的设备能否发送邮件
         guard MFMailComposeViewController.canSendMail() else {

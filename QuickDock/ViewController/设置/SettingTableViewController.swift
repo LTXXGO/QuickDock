@@ -19,13 +19,14 @@ class SettingTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        switch section {
+        case 0:
             return 2
-        } else if section == 1 {
+        case 1:
             return 3
-        } else if section == 2 {
+        case 2:
             return 1
-        } else {
+        default:
             return 0
         }
     }
@@ -34,6 +35,14 @@ class SettingTableViewController: UITableViewController {
         //取消选中效果的动画
         tableView.deselectRow(at: indexPath, animated: true)
         
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                // MARK: - 备份/恢复数据还没实现
+            }
+            if indexPath.row == 1 {
+                clearData()
+            }
+        }
         if indexPath.section == 1 {
             if indexPath.row == 2 {
                 recommendToFriends()
@@ -50,11 +59,6 @@ class SettingTableViewController: UITableViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    
     func recommendToFriends() {
         let MessageForShare = ["test message"]
         let activityController = UIActivityViewController(activityItems: MessageForShare, applicationActivities: nil)
@@ -62,10 +66,17 @@ class SettingTableViewController: UITableViewController {
         present(activityController, animated: true, completion: nil)
     }
     
-    //Cancel按钮还没实现，现在无法返回。
-    //应该实现:
-        //从速览进入设置时，左上角返回按钮应显示 " < 速览 "
-        //从全部进入设置时，左上角返回按钮应显示 " < 全部 "
+    func clearData() {
+        //弹出二次确认提示框
+        let alert = UIAlertController(title: "警告", message: "是否删除全部图片？", preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "确定", style: .destructive, handler: nil)
+        let cancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alert.addAction(confirm)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
+        
+        // MARK: - 删除图片还没实现
+    }
     
 }
 
