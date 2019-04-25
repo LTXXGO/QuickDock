@@ -13,13 +13,13 @@ class Image {
     var titli: String?
     var Remarks: String?
     //默认放置到速览页面
-    var enableQuickLook = false
-    var quickLookPosition = QuickLookPosition.topLeft
+    var enableQuickLook = true
+    var quickLookPosition = Position.topLeft
     //提醒选项默认关闭
     var enableRemind = false
     var remindDate = Date()
     
-    enum QuickLookPosition {
+    enum Position {
         case topLeft
         case topRight
         case bottomLeft
