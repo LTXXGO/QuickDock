@@ -11,7 +11,6 @@
 		BE3EB097226B60B600428FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3EB095226B60B600428FA5 /* Main.storyboard */; };
 		BE3EB099226B60B700428FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3EB098226B60B700428FA5 /* Assets.xcassets */; };
 		BE3EB09C226B60B700428FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3EB09A226B60B700428FA5 /* LaunchScreen.storyboard */; };
-		BEDD01A5226F287000BF6203 /* AddNewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */; };
 		BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */; };
 		BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */; };
 		BEDD01AD226F296000BF6203 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */; };
@@ -20,6 +19,8 @@
 		BEDD01B5226F3B7800BF6203 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */; };
 		BEDD01C922715EE400BF6203 /* ContactAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01C822715EE400BF6203 /* ContactAuthorViewController.swift */; };
 		BEDD01CC22719A6500BF6203 /* BeginnersGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01CB22719A6500BF6203 /* BeginnersGuideViewController.swift */; };
+		BEDD01CE2271D5B300BF6203 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01CD2271D5B300BF6203 /* TabBarController.swift */; };
+		BEDD01F42274405500BF6203 /* AddNewImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01F32274405500BF6203 /* AddNewImageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,6 @@
 		BE3EB098226B60B700428FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3EB09B226B60B700428FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3EB09D226B60B700428FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewImageViewController.swift; sourceTree = "<group>"; };
 		BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindTableViewController.swift; sourceTree = "<group>"; };
 		BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		BEDD01B4226F3B7800BF6203 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		BEDD01C822715EE400BF6203 /* ContactAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAuthorViewController.swift; sourceTree = "<group>"; };
 		BEDD01CB22719A6500BF6203 /* BeginnersGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnersGuideViewController.swift; sourceTree = "<group>"; };
+		BEDD01CD2271D5B300BF6203 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BEDD01F32274405500BF6203 /* AddNewImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewImageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		BEDD019C226F25E500BF6203 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEDD01CD2271D5B300BF6203 /* TabBarController.swift */,
 				BEDD019F226F264E00BF6203 /* 速览 */,
 				BEDD01A0226F266A00BF6203 /* 全部 */,
 				BEDD01A3226F26A100BF6203 /* 添加 */,
@@ -153,7 +156,7 @@
 		BEDD01A3226F26A100BF6203 /* 添加 */ = {
 			isa = PBXGroup;
 			children = (
-				BEDD01A4226F287000BF6203 /* AddNewImageViewController.swift */,
+				BEDD01F32274405500BF6203 /* AddNewImageTableViewController.swift */,
 			);
 			path = "添加";
 			sourceTree = "<group>";
@@ -255,15 +258,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDD01F42274405500BF6203 /* AddNewImageTableViewController.swift in Sources */,
 				BEDD01C922715EE400BF6203 /* ContactAuthorViewController.swift in Sources */,
 				BEDD01B5226F3B7800BF6203 /* SettingTableViewController.swift in Sources */,
+				BEDD01CE2271D5B300BF6203 /* TabBarController.swift in Sources */,
 				BEDD01B1226F34E000BF6203 /* Image.swift in Sources */,
 				BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */,
 				BE3EB092226B60B600428FA5 /* AppDelegate.swift in Sources */,
 				BEDD01CC22719A6500BF6203 /* BeginnersGuideViewController.swift in Sources */,
 				BEDD01AF226F2A0A00BF6203 /* AllImagesViewController.swift in Sources */,
 				BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */,
-				BEDD01A5226F287000BF6203 /* AddNewImageViewController.swift in Sources */,
 				BEDD01AD226F296000BF6203 /* QuickLookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

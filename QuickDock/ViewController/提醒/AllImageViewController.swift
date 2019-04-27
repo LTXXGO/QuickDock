@@ -1,5 +1,5 @@
 //
-//  AddNewImageViewController.swift
+//  AllImageViewController.swift
 //  QuickDock
 //
 //  Created by LTXX on 2019/4/23.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddNewImageViewController: UIViewController {
+class AllImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
