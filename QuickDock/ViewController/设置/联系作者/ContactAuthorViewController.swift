@@ -23,7 +23,7 @@ class ContactAuthorViewController: UIViewController, MFMailComposeViewController
             return
         }
         let mailComposer = MFMailComposeViewController()
-        mailComposer.delegate = self
+        mailComposer.mailComposeDelegate = self
         mailComposer.setToRecipients(["example@example.com"])//设置默认收件地址
         mailComposer.setSubject("Example Subject")//设置默认主题
         mailComposer.setMessageBody("Say something", isHTML: false)//设置默认文本

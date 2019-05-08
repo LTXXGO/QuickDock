@@ -68,14 +68,17 @@ class SettingTableViewController: UITableViewController {
     
     func clearData() {
         //弹出二次确认提示框
+        showAlert()
+        // MARK: - 删除图片还没实现
+    }
+    
+    func showAlert() {
         let alert = UIAlertController(title: "警告", message: "是否删除全部图片？", preferredStyle: .alert)
         let confirm = UIAlertAction(title: "确定", style: .destructive, handler: nil)
         let cancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         alert.addAction(confirm)
         alert.addAction(cancel)
         present(alert, animated: true, completion: nil)
-        
-        // MARK: - 删除图片还没实现
     }
     
 }

@@ -14,6 +14,10 @@ class QuickLookViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    //用于设置的返回
+    //添加新图片
+    @IBAction func addImage(_ sender: Any) {
+    }
+    
+    //用于从设置返回
     @IBAction func unwind(unwindSegue: UIStoryboardSegue) { }
 }
