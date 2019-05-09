@@ -32,7 +32,7 @@ class SettingTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //取消选中效果的动画
+        // 取消选中效果的动画
         tableView.deselectRow(at: indexPath, animated: true)
         
         if indexPath.section == 0 {
@@ -50,7 +50,7 @@ class SettingTableViewController: UITableViewController {
         }
     }
     
-    //使最后一行显示版本号不会有点击动画，不会给用户造成困惑
+    // 使最后一行显示版本号不会有点击动画，不会给用户造成困惑
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         if indexPath.section == 2 {
             return nil
@@ -62,12 +62,12 @@ class SettingTableViewController: UITableViewController {
     func recommendToFriends() {
         let MessageForShare = ["test message"]
         let activityController = UIActivityViewController(activityItems: MessageForShare, applicationActivities: nil)
-        //以模态方式将一个视图控制器弹出窗口
+        // 以模态方式将一个视图控制器弹出窗口
         present(activityController, animated: true, completion: nil)
     }
     
     func clearData() {
-        //弹出二次确认提示框
+        // 弹出二次确认提示框
         showAlert()
         // MARK: - 删除图片还没实现
     }
