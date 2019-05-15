@@ -14,6 +14,8 @@
 		BE5ED3F622840FD5006ECA60 /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5ED3F522840FD5006ECA60 /* ResultsTableController.swift */; };
 		BE5ED3F822841080006ECA60 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5ED3F722841080006ECA60 /* BaseTableViewController.swift */; };
 		BE5ED3FA22841A46006ECA60 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5ED3F922841A46006ECA60 /* DetailViewController.swift */; };
+		BEAC6E6D228C159D0004AF86 /* QuickLookCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC6E6B228C159D0004AF86 /* QuickLookCollectionViewController.swift */; };
+		BEAC6E6E228C159D0004AF86 /* QuickLookCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAC6E6C228C159D0004AF86 /* QuickLookCollectionViewController.xib */; };
 		BEDD01A7226F28DE00BF6203 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */; };
 		BEDD01AB226F293900BF6203 /* RemindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */; };
 		BEDD01AD226F296000BF6203 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */; };
@@ -37,6 +39,8 @@
 		BE5ED3F522840FD5006ECA60 /* ResultsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
 		BE5ED3F722841080006ECA60 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		BE5ED3F922841A46006ECA60 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BEAC6E6B228C159D0004AF86 /* QuickLookCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookCollectionViewController.swift; sourceTree = "<group>"; };
+		BEAC6E6C228C159D0004AF86 /* QuickLookCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLookCollectionViewController.xib; sourceTree = "<group>"; };
 		BEDD01A6226F28DE00BF6203 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BEDD01AA226F293900BF6203 /* RemindTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindTableViewController.swift; sourceTree = "<group>"; };
 		BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				BEDD01AC226F296000BF6203 /* QuickLookViewController.swift */,
+				BEAC6E6B228C159D0004AF86 /* QuickLookCollectionViewController.swift */,
+				BEAC6E6C228C159D0004AF86 /* QuickLookCollectionViewController.xib */,
 			);
 			path = "速览";
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 				BE3EB09C226B60B700428FA5 /* LaunchScreen.storyboard in Resources */,
 				BE3EB099226B60B700428FA5 /* Assets.xcassets in Resources */,
 				BE3EB097226B60B600428FA5 /* Main.storyboard in Resources */,
+				BEAC6E6E228C159D0004AF86 /* QuickLookCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAC6E6D228C159D0004AF86 /* QuickLookCollectionViewController.swift in Sources */,
 				BEDD01F42274405500BF6203 /* AddNewImageTableViewController.swift in Sources */,
 				BEDD01C922715EE400BF6203 /* ContactAuthorViewController.swift in Sources */,
 				BEDD01B5226F3B7800BF6203 /* SettingTableViewController.swift in Sources */,

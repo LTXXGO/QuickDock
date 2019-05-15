@@ -9,7 +9,7 @@
 import UIKit
 
 class AddNewImageTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,9 +27,4 @@ class AddNewImageTableViewController: UITableViewController {
             return 44
         }
     }
-
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
-//    }
-
 }

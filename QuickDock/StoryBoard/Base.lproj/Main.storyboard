@@ -10,6 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="UOc-T3-rew">
+            <objects>
+                <collectionViewController id="n9K-BJ-DN9" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RbH-sk-KOd">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="368"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Egt-o0-wVO">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RLT-aR-Fdr">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="n9K-BJ-DN9" id="9xJ-fk-mUP"/>
+                            <outlet property="delegate" destination="n9K-BJ-DN9" id="u7l-PD-Pa0"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2un-XH-LmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2794" y="1475"/>
+        </scene>
         <!--速览-->
         <scene sceneID="egJ-r9-kej">
             <objects>
@@ -18,43 +52,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FOh-tc-dzo">
-                                <rect key="frame" x="16" y="127" width="288" height="181.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uF6-ys-meI">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="181.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="uF6-ys-meI" secondAttribute="height" multiplier="3:4" id="ag0-dI-NxM"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="突然变态" translatesAutoresizingMaskIntoConstraints="NO" id="3AB-Cq-UeO">
-                                        <rect key="frame" x="152" y="0.0" width="136" height="181.5"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cvx-fB-kRt">
-                                <rect key="frame" x="16" y="324.5" width="288" height="181"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="突然变色" translatesAutoresizingMaskIntoConstraints="NO" id="oee-Jt-AIr">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="181"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="oee-Jt-AIr" secondAttribute="height" multiplier="3:4" id="iy2-0C-hxA"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="突然打人" translatesAutoresizingMaskIntoConstraints="NO" id="Fup-vN-d3V">
-                                        <rect key="frame" x="152" y="0.0" width="136" height="181"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNd-Kp-DVR">
+                                <rect key="frame" x="20" y="131" width="280" height="368"/>
+                                <connections>
+                                    <segue destination="n9K-BJ-DN9" kind="embed" id="7c7-8l-zs4"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cvx-fB-kRt" firstAttribute="leading" secondItem="sIL-We-P2l" secondAttribute="leading" constant="16" id="4TI-JV-ZLD"/>
-                            <constraint firstItem="FOh-tc-dzo" firstAttribute="leading" secondItem="sIL-We-P2l" secondAttribute="leading" constant="16" id="Wra-gS-P9q"/>
-                            <constraint firstItem="sIL-We-P2l" firstAttribute="trailing" secondItem="FOh-tc-dzo" secondAttribute="trailing" constant="16" id="Z6m-PO-vGF"/>
-                            <constraint firstItem="sIL-We-P2l" firstAttribute="trailing" secondItem="cvx-fB-kRt" secondAttribute="trailing" constant="16" id="gnr-V5-e7b"/>
-                            <constraint firstItem="FOh-tc-dzo" firstAttribute="top" secondItem="sIL-We-P2l" secondAttribute="top" constant="16" id="p1H-ZE-eb5"/>
-                            <constraint firstItem="cvx-fB-kRt" firstAttribute="top" secondItem="FOh-tc-dzo" secondAttribute="bottom" constant="16" id="pkC-hk-gPF"/>
+                            <constraint firstItem="sIL-We-P2l" firstAttribute="bottom" secondItem="WNd-Kp-DVR" secondAttribute="bottom" constant="20" id="2jV-AX-0z4"/>
+                            <constraint firstItem="WNd-Kp-DVR" firstAttribute="leading" secondItem="sIL-We-P2l" secondAttribute="leading" constant="20" id="7y2-bV-Gmx"/>
+                            <constraint firstItem="sIL-We-P2l" firstAttribute="trailing" secondItem="WNd-Kp-DVR" secondAttribute="trailing" constant="20" id="8tt-pB-p5p"/>
+                            <constraint firstItem="WNd-Kp-DVR" firstAttribute="top" secondItem="sIL-We-P2l" secondAttribute="top" constant="20" id="JzT-fF-zCx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sIL-We-P2l"/>
                     </view>
@@ -66,8 +76,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rKp-vc-fHb">
                             <connections>
-                                <action selector="addImage:" destination="gl0-Ik-yYo" id="jbw-PI-He4"/>
-                                <segue destination="9S1-4w-P3h" kind="show" id="R4J-uz-6kr"/>
+                                <action selector="addNewImage:" destination="gl0-Ik-yYo" id="v5U-nK-Skv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,7 +93,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-ZV-2fZ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-ZV-2fZ" customClass="AllImagesCollectionView" customModule="QuickDock" customModuleProvider="target">
                                 <rect key="frame" x="16" y="127" width="288" height="376"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ya8-wp-iYF">
@@ -93,16 +102,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KXs-yA-YhD">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,11 +116,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="全部" id="MAF-7Q-0y0">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="KxW-YW-RUX"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="abm-eN-VOM">
-                            <connections>
-                                <segue destination="9S1-4w-P3h" kind="show" id="IMF-Wd-pwd"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="abm-eN-VOM"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXk-yn-e8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -599,7 +595,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pao-X2-ytF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684" y="1581"/>
+            <point key="canvasLocation" x="-684.375" y="1580.2816901408451"/>
         </scene>
         <!--提醒-->
         <scene sceneID="fi2-wy-Zek">
@@ -781,14 +777,9 @@
         <image name="搜索选中" width="23" height="23"/>
         <image name="新手引导" width="21" height="21"/>
         <image name="清理内容" width="21.5" height="26"/>
-        <image name="突然变态" width="196" height="196"/>
-        <image name="突然变色" width="196" height="196"/>
         <image name="突然打人" width="196" height="196"/>
         <image name="联系作者" width="22.5" height="16"/>
         <image name="速览未选中" width="22" height="22"/>
         <image name="速览选中" width="22" height="22"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="IMF-Wd-pwd"/>
-    </inferredMetricsTieBreakers>
 </document>
