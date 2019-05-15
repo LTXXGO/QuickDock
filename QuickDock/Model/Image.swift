@@ -10,12 +10,10 @@ import Foundation
 import UIKit
 
 class Image: NSObject, NSCoding {
-    // 图片
+
     var item: UIImage
-    
-    // 图片的标题和备注都为可选项，用户可以仅保存图片而不用做其他操作，提高效率
-    var title: String?//标题
-    var remark: String?//备注
+    var title: String?
+    var remark: String?
     
     // 默认放置到速览页面
     var enableQuickLook = true
