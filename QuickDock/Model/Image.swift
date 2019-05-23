@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+// 图片在速览中的位置
+enum Position {
+    case topLeft
+    case topRight
+    case bottomLeft
+    case bottomRight
+}
+
 class Image: NSObject, NSCoding {
 
     var item: UIImage
@@ -28,14 +36,6 @@ class Image: NSObject, NSCoding {
         self.item = item
         self.title = title
         self.remark = remark
-    }
-    
-    // 图片在速览中的位置
-    enum Position {
-        case topLeft
-        case topRight
-        case bottomLeft
-        case bottomRight
     }
     
     // Coder Key
